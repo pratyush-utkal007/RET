@@ -13,7 +13,7 @@ const HeroSection = () => {
           Unleash Growth with Next-Gen CRM Solutions
         </h1>
         <p className="md:mt-5 mt-2 md:text-xl">
-          we specialize in personalized CRM solutions to fuel your business
+          We specialize in personalized CRM solutions to fuel your business
           growth. With our tailored approach and expert support, we ensure
           you're equipped to thrive in today's fast-paced market.
         </p>
