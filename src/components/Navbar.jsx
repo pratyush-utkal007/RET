@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import logo from "../assets/RET_logo.png";
@@ -7,7 +8,6 @@ import fbLogo from "../assets/facebook.png";
 import instaLogo from "../assets/instagram.png";
 import twitterLogo from "../assets/twitter.png";
 import LinkedInLogo from "../assets/linkedin.png";
-
 
 import "../App.css";
 const Navbar = () => {
@@ -22,9 +22,9 @@ const Navbar = () => {
     }
   };
 
-  const handleSidebar = () =>{
-    setMobileNav(!mobileNav)
-  }
+  const handleSidebar = () => {
+    setMobileNav(!mobileNav);
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", checkScrollY);
@@ -84,7 +84,7 @@ const Navbar = () => {
               to="our-value"
               className="cursor-pointer"
             >
-              Our Values
+              Values
             </Link>
           </li>
           <li>
@@ -118,26 +118,36 @@ const Navbar = () => {
           className={`hamburger ${mobileNav ? "is-active" : ""} md:hidden`}
           onClick={handleSidebar}
         >
-            
-         { mobileNav ? <AiOutlineClose className="text-3xl duration-300"/>
-         :
-         <FiMenu className="text-3xl duration-300" />
-        }
+          {mobileNav ? (
+            <AiOutlineClose className="text-3xl duration-300" />
+          ) : (
+            <FiMenu className="text-3xl duration-300" />
+          )}
         </button>
-
-       
       </nav>
-        {/* ========Mobile Nav======= */}
-      <div className={`w-full h-screen bg-[#000000bb] fixed ${mobileNav?'left-0':'-left-full'} duration-300 transition-all z-[99]`}>
-     
-          <div className="bg-blue-950 text-white h-screen relative inline-flex flex-col w-auto md:items-center md:gap-10 px-6 text-lg border-white">
+      {/* ========Mobile Nav======= */}
+      <div
+        className={`w-full h-screen bg-[#000000bb] fixed ${
+          mobileNav ? "left-0" : "-left-full"
+        } duration-300 transition-all z-[99]`}
+      >
+        <div className="bg-blue-950 text-white h-screen relative inline-flex flex-col w-auto md:items-center md:gap-10 px-6 text-lg border-white">
           <div>
-          <Link spy={true} smooth={true} offset={0} duration={500} to={"home"}>
-            <img src={logo} alt="" className="md:w-32 w-32 cursor-pointer py-6" />
-          </Link>
-        </div>
-            <ul className="flex flex-col gap-6 py-6 border-t border-b border-slate-500">
-
+            <Link
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              to={"home"}
+            >
+              <img
+                src={logo}
+                alt=""
+                className="md:w-32 w-32 cursor-pointer py-6"
+              />
+            </Link>
+          </div>
+          <ul className="flex flex-col gap-6 py-6 border-t border-b border-slate-500">
             <li>
               <Link
                 activeClass="active"
@@ -177,7 +187,7 @@ const Navbar = () => {
                 className="cursor-pointer"
                 onClick={handleSidebar}
               >
-                Our Values
+                Values
               </Link>
             </li>
             <li>
@@ -208,26 +218,26 @@ const Navbar = () => {
                 Contact Us
               </Link>
             </li>
-            </ul>
-<div className="mt-6">
-              <p className="mb-2">Follow us:</p> 
+          </ul>
+          <div className="mt-6">
+            <p className="mb-2">Follow us:</p>
             <div className="icons flex gap-3">
               <Link className="hover:-translate-y-2 duration-300">
-                <img src={fbLogo} alt="facebook icon" className="w-6"/>
+                <img src={fbLogo} alt="facebook icon" className="w-6" />
               </Link>
               <Link className="hover:-translate-y-2 duration-300">
-                <img src={instaLogo} alt="instagram icon" className="w-6"/>
+                <img src={instaLogo} alt="instagram icon" className="w-6" />
               </Link>
               <Link className="hover:-translate-y-2 duration-300">
-                <img src={twitterLogo} alt="twitter icon" className="w-6"/>
+                <img src={twitterLogo} alt="twitter icon" className="w-6" />
               </Link>
               <Link className="hover:-translate-y-2 duration-300">
-                <img src={LinkedInLogo} alt="pintrest icon" className="w-6"/>
+                <img src={LinkedInLogo} alt="pintrest icon" className="w-6" />
               </Link>
-            </div>
             </div>
           </div>
         </div>
+      </div>
     </>
   );
 };

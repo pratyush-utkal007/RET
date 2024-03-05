@@ -1,4 +1,3 @@
-import React from "react";
 import "../App.css";
 import EmployeeImg from "../assets/employee-focus.png";
 import CustomerImg from "../assets/customer-focus.png";
@@ -13,31 +12,31 @@ const OurValues = () => {
       title: "Employee First",
       description:
         "Aim to create a positive workplace culture that attracts and retains top talent, leading to long-term success and sustainability.",
-        image: EmployeeImg
+      image: EmployeeImg,
     },
     {
       title: "Customer Focus",
       description:
         "Prioritizing the needs and satisfaction of customers, ensuring a positive experience and building long-term relationships.",
-        image: CustomerImg
+      image: CustomerImg,
     },
     {
       title: "Quality",
       description:
         "Commit to delivering high-quality services and products, ensuring customer satisfaction and trust.",
-        image: Quality
+      image: Quality,
     },
     {
       title: "Transparency",
       description:
         "Maintain openness in operations and communications, both internally and externally.",
-        image:Transparency
+      image: Transparency,
     },
     {
       title: "Innovation",
       description:
         "Encouraging creativity, continuous improvement, and a willingness to explore new ideas and technologies.",
-        image: Innovation
+      image: Innovation,
     },
   ];
 
@@ -83,15 +82,15 @@ const OurValues = () => {
             Our Values
           </h3>
 
-          <div className="md:px-14 px-6 text-center mt-4">
-            <p className="md:text-xl text-slate-900 font-semibold">
+          <div className="md:px-14 px-6 text-center mt-7">
+            <p className="md:text-xl text-slate-900 font-semibold mb-8">
               RET is a Value Driven Company which is committed towards the
               growth and success of its Employees, Clients, and Partners. The
               Foundation of our company lays on the below key principles which
               form the core pillars of our Firm.
             </p>
 
-            <div className="flex flex-wrap justify-center text-center md:gap-10 gap-3 md:my-14 my-6">
+            <div className="flex  justify-center text-center md:gap-10 gap-3 md:my-1 my-6">
               {companyValues.map((value, index) => {
                 return (
                   <ValueCard
@@ -104,10 +103,7 @@ const OurValues = () => {
               })}
             </div>
           </div>
-
-        
         </div>
-      
       </div>
     </>
   );
