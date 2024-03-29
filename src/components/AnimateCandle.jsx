@@ -5,16 +5,13 @@ const AnimateCandle = () => {
   return (
     <>
       <motion.div
-        initial={{ width: 0 }}
-        whileInView={{ width: "auto" }}
-        transition={{ duration: 0.5 }}
-        className="w-0 flex items-end justify-between md:gap-10 border-b-4 border-slate-600 md:px-10 px-2 md:h-96 h-80 overflow-hidden"
+        className="flex items-end justify-between md:gap-10 border-b-4 border-slate-600 md:px-10 px-2 md:h-96 h-80 overflow-hidden"
       >
         <motion.div
           viewport={{ once: false }}
           initial={{ height: 0 }}
           whileInView={{ height: 80 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.5 }}
           exit={{ transition: { delay: 0, duration: 0 } }}
           className="md:w-20 h-20 flex flex-col relative"
         >
@@ -30,7 +27,7 @@ const AnimateCandle = () => {
           viewport={{ once: false }} 
           initial={{ height: 0 }}
           whileInView={{ height: 112 }}
-          transition={{ duration: 0.3, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           exit={{ transition: { delay: 0, duration: 0 } }}
           className="md:w-20 h-28 relative"
         >
@@ -46,7 +43,7 @@ const AnimateCandle = () => {
           viewport={{ once: false }}
           initial={{ height: 0 }}
           whileInView={{ height: 144 }}
-          transition={{ duration: 0.3, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
           exit={{ transition: { delay: 0, duration: 0 } }}
           className="md:w-20 h-36 relative"
         >
@@ -62,7 +59,7 @@ const AnimateCandle = () => {
           viewport={{ once: false }}
           initial={{ height: 0 }}
           whileInView={{ height: 176 }}
-          transition={{ duration: 0.3, delay: 0.6 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
           exit={{ transition: { delay: 0, duration: 0 } }}
           className="md:w-20 h-44 relative"
         >
@@ -78,7 +75,7 @@ const AnimateCandle = () => {
           viewport={{ once: false }}
           initial={{ height: 0 }}
           whileInView={{ height: 224 }}
-          transition={{ duration: 0.3, delay: 0.8 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
           exit={{ transition: { delay: 0, duration: 0 } }}
           className="md:w-20 h-56 relative"
         >
@@ -94,7 +91,7 @@ const AnimateCandle = () => {
           viewport={{ once: false }}
           initial={{ height: 0 }}
           whileInView={{ height: 256 }}
-          transition={{ duration: 0.3, delay: 0.9 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
           exit={{ transition: { delay: 0, duration: 0 } }}
           className="md:w-20 h-64 relative"
         >
@@ -110,7 +107,7 @@ const AnimateCandle = () => {
           viewport={{ once: false }}
           initial={{ height: 0 }}
           whileInView={{ height: 288 }}
-          transition={{ duration: 0.3, delay: 1 }}
+          transition={{ duration: 0.5, delay: 1 }}
           exit={{ transition: { delay: 0, duration: 0 } }}
           className="md:w-20 flex flex-col relative"
         >
